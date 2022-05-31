@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="w-full shadow fixed left-0 top-0 z-100 bg-white">
+      <nav class="w-full max-w-6xl mx-auto flex items-center justify-between">
+        <!-- logo here -->
+        <div class="flex justify-between items-center w-full py-1">
+          <h1 class="py-2 px-3 text-2xl font-bold text-indigo-600">
+            Softfy Inc.
+          </h1>
+          <span
+            ><ion-icon
+              name="menu"
+              class="w-6 h-6 py-2 px-3 md:hidden cursor-pointer"
+              onclick="toggleMenu(this)"
+            ></ion-icon
+          ></span>
+        </div>
+        <div class="hidden md:flex md:items-center space-x-3">
+          <a
+            href="#"
+            class="py-2 px-3 text-lg hover:text-indigo-600 text-slate-700 text-semibold transition duration-400"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="py-2 px-3 text-lg hover:text-indigo-600 text-slate-700 text-semibold transition duration-400"
+            >Services</a
+          >
+          <a
+            href="#"
+            class="py-2 px-3 text-lg hover:text-indigo-600 text-slate-700 text-semibold transition duration-400"
+            >Products</a
+          >
+          <a
+            href="#"
+            class="py-2 px-3 text-lg hover:text-indigo-600 text-slate-700 text-semibold transition duration-400"
+            >Contact</a
+          >
+        </div>
+        <!-- primary nav -->
+      </nav>
+      <!-- mobile nav -->
+      <div
+        class="hidden flex flex-col items-center md:hidden mobile-menu min-h-screen"
+      >
+        <a
+          href="#"
+          class="py-2 px-3 hover:text-indigo-600 text-semibold text-xl py-6 transition duration-400"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="py-2 px-3 hover:text-indigo-600 text-semibold text-xl py-6 transition duration-400"
+          >Services</a
+        >
+        <a
+          href="#"
+          class="py-2 px-3 hover:text-indigo-600 text-semibold text-xl py-6 transition duration-400"
+          >Products</a
+        >
+        <a
+          href="#"
+          class="py-2 px-3 hover:text-indigo-600 text-semibold text-xl py-6 transition duration-400"
+          >Contact</a
+        >
+      </div>
+    </header>
+    <section class="w-full min-h-screen md:my-20 my-12" id="hero">
+      <div
+        class="w-full max-w-6xl h-full mx-auto flex flex-col md:flex-row-reverse md:justify-between md:items-center md:gap-2 px-3"
+      >
+        <div class="h-full md:relative">
+          <img src="./img/hero.png" alt="" class="w-full rounded-xl" />
+          <div
+            class="hidden md:block md:absolute md:bottom-14 md:left-[-150px] md:w-[400px] md:z-1 md:py-4 md:px-6 md:rounded-lg md:bg-indigo-800"
+          >
+            <p class="text-sm italic text-slate-100">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Voluptatibus aliquam culpa dolorum.
+            </p>
+            <p class="text-sm text-slate-200 text-right font-semibold">
+              Dr. Shaaban Fundi
+            </p>
+            <p class="text-sm text-slate-300 text-right">
+              CEO Kibogoji Experiential Learning Inc
+            </p>
+          </div>
+        </div>
+        <div class="p-4">
+          <h2
+            class="text-4xl my-5 md:text-6xl md:mb-6 py-4 font-bold text-left text-slate-700"
+          >
+            We are Edu Tech <br />Agency
+          </h2>
+
+          <p class="text-lg text-slate-600 mb-3">
+            We help you focus on academics and leave us the daily management
+            cores.<br />
+            Join us with other 100+ schools to improve your work flow
+          </p>
+          <button
+            class="bg-indigo-600 w-full mt-4 md:w-fit py-2 px-8 md:py-3 md:px-14 md:mt-4 font-bold text-white rounded-sm hover:bg-indigo-500 transition duration-500"
+          >
+            Call Us Now
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="w-full py-8 bg-gray-200">
+      <div class="w-full max-w-6xl mx-auto">
+        <h2 class="text-center uppercase font-semibold text-slate-600">
+          Companies chose to work with us
+        </h2>
+      </div>
+    </section>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script>
+      function toggleMenu(e) {
+        let mobileMenu = document.querySelector(".mobile-menu");
+        e.name === "menu" ? (e.name = "close") : (e.name = "menu");
+        mobileMenu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
