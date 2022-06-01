@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="scroll-smooth md:scroll-auto">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +11,7 @@
         <!-- logo here -->
         <div class="flex justify-between items-center w-full py-1">
           <h1 class="py-2 px-3 text-2xl font-bold text-indigo-600">
-            Softfy Inc.
+            <a href="">Softfy Inc.</a>
           </h1>
           <span
             ><ion-icon
@@ -28,17 +28,17 @@
             >Home</a
           >
           <a
-            href="#"
+            href="#services"
             class="py-2 px-3 text-lg hover:text-indigo-600 text-slate-700 text-semibold transition duration-400"
             >Services</a
           >
           <a
-            href="#"
+            href="#product"
             class="py-2 px-3 text-lg hover:text-indigo-600 text-slate-700 text-semibold transition duration-400"
             >Products</a
           >
           <a
-            href="#"
+            href="#contact"
             class="py-2 px-3 text-lg hover:text-indigo-600 text-slate-700 text-semibold transition duration-400"
             >Contact</a
           >
@@ -50,22 +50,26 @@
         class="hidden flex flex-col items-center md:hidden mobile-menu min-h-screen"
       >
         <a
+        onclick="toggleMobileMenu(this)"
           href="#"
           class="py-2 px-3 hover:text-indigo-600 text-semibold text-xl py-6 transition duration-400"
           >Home</a
         >
         <a
-          href="#"
+        onclick="toggleMobileMenu(this)"
+          href="#services"
           class="py-2 px-3 hover:text-indigo-600 text-semibold text-xl py-6 transition duration-400"
           >Services</a
         >
         <a
-          href="#"
+        onclick="toggleMobileMenu(this)"
+          href="#product"
           class="py-2 px-3 hover:text-indigo-600 text-semibold text-xl py-6 transition duration-400"
           >Products</a
         >
         <a
-          href="#"
+        onclick="toggleMobileMenu(this)"
+          href="#contact"
           class="py-2 px-3 hover:text-indigo-600 text-semibold text-xl py-6 transition duration-400"
           >Contact</a
         >
@@ -107,10 +111,10 @@
             management cores.<br />
             Join us with other 100+ schools to improve your work flow
           </p>
-          <button
-            class="bg-indigo-600 w-full mt-4 md:w-fit py-2 px-8 md:py-3 md:px-14 md:mt-4 font-bold text-white rounded-sm hover:bg-indigo-500 transition duration-500"
-          >
-            Call Us Now
+          <button 
+            class="bg-indigo-600 w-full mt-4 md:w-fit py-2 px-8 md:py-3 md:px-14 md:mt-4 font-semibold text-white rounded-sm hover:bg-indigo-500 transition duration-500"
+          ><a href="#contact">    Contact Us</a>
+        
           </button>
         </div>
       </div>
@@ -142,13 +146,16 @@
         </div>
       </div>
     </section>
-    <section id="services" class="w-full flex justify-center items-center">
-      <div class="w-full max-w-6xl mx-auto px-4 py-8 md:py-28">
-        <h2 class="text-4xl font-bold py-4 text-slate-700">
+    <section
+      id="services"
+      class="w-full flex justify-center items-center z-[-1]"
+    >
+      <div class="w-full max-w-6xl mx-auto px-4 py-16 md:py-28">
+        <h2 class="text-4xl font-bold py-4 text-slate-700 text-center">
           Our Awesome Services
         </h2>
-        <p class="py-2 text-lg text-slate-500">
-          Our serviecs focus on educational institutaions which covers local
+        <p class="py-2 text-lg text-slate-500 text-center">
+          Our services focus on educational institutaions which covers local
           schools, international schools and universities.
         </p>
         <div
@@ -157,7 +164,7 @@
           <div
             class="md:w-96 border-2 shadow-sm rounded-lg border-slate-100 p-4 flex items-center space-x-3"
           >
-            <div>
+            <div class="z-[-4]">
               <ion-icon
                 name="cube"
                 class="w-11 h-11 text-indigo-600"
@@ -175,27 +182,27 @@
           <div
             class="md:w-96 border-2 shadow-sm rounded-lg border-slate-100 p-4 flex items-center space-x-3"
           >
-            <div>
-              <ion-icon
-                name="cube"
-                class="w-11 h-11 text-indigo-600"
-              ></ion-icon>
-            </div>
-            <div>
-              <h3 class="text-lg font-semibold mb-3">Computer lab design</h3>
-              <p class="text-slate-600">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Voluptatibus dolores perferendis fugiat recusandae id
-                accusantium ad, quisquam dolorum velit ex!
-              </p>
-            </div>
-          </div>
-          <div
-            class="md:w-96 border-2 shadow-sm rounded-lg border-slate-100 p-4 flex items-center space-x-3"
-          >
-            <div>
+            <div class="z-[-4]">
               <ion-icon
                 name="wifi"
+                class="w-11 h-11 text-indigo-600"
+              ></ion-icon>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-3">AI prediction systems</h3>
+              <p class="text-slate-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus dolores perferendis fugiat recusandae id
+                accusantium ad, quisquam dolorum velit ex!
+              </p>
+            </div>
+          </div>
+          <div
+            class="md:w-96 border-2 shadow-sm rounded-lg border-slate-100 p-4 flex items-center space-x-3"
+          >
+            <div class="z-[-4]">
+              <ion-icon
+                name="cloud-done"
                 class="h-11 w-11 text-indigo-600"
               ></ion-icon>
             </div>
@@ -211,12 +218,123 @@
         </div>
       </div>
     </section>
+    <section class="w-full flex items-center justify-between bg-indigo-500" id="product">
+      <div class="w-full max-w-6xl mx-auto px-4 py-20">
+        <h3 class="text-4xl font-bold py-4 text-white text-center md:mb-14">
+          Do Better Work With Our Products
+        </h3>
+        <div
+          class="max-w-5xl mx-auto flex flex-col md:flex-row gap-5 md:py-8 my-5"
+        >
+          <div class="w-full md:w-1/2">
+            <h3
+              class="text-2xl md:text-3xl text-white md:ml-14 text-semibold mb-3"
+            >
+              Invoice Tracking System
+            </h3>
+            <p class="justify md:mt-10 md:ml-14 text-slate-100">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+              consequatur id magni voluptatem perspiciatis tempore velit, labore
+              ex placeat eum non voluptates ipsam culpa quae, necessitatibus
+              molestias dolore aliquam dignissimos?
+            </p>
+            <ul class="justify md:mt-5 md:ml-14 text-slate-100">
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+          </div>
+          <div class="w-full md:w-1/2">
+            <img src="./img/invoice.png" alt="" class="rounded-lg w-full" />
+          </div>
+        </div>
+        <div
+          class="max-w-5xl mx-auto flex flex-col-reverse md:flex-row gap-5 md:py-8 my-5"
+        >
+          <div class="w-full md:w-1/2">
+            <img src="./img/learning.png" alt="" class="rounded-lg w-full" />
+          </div>
+          <div class="w-full md:w-1/2">
+            <h3
+              class="text-2xl md:text-3xl text-white text-center text-semibold mb-3"
+            >
+              Learners Managment System
+            </h3>
+            <p class="justify md:mt-10 md:ml-14 text-slate-100">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
+              consequatur id magni voluptatem perspiciatis tempore velit, labore
+              ex placeat eum non voluptates ipsam culpa quae, necessitatibus
+              molestias dolore aliquam dignissimos?
+            </p>
+            <ul class="justify md:mt-5 md:ml-14 text-slate-100">
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="w-full flex justify-between items-center md:py-20 py-12" id="contact">
+      <div class="w-full max-w-5xl mx-auto md:flex md: flex-row md:space-x-6 px-3">
+        <div class="md:w-[43%]">
+          <h3 class="text-4xl font-bold py-4 text-slate-700  mb-3">Let's get in touch</h3>
+          <form action="">
+            <div class="flex flex-col py-4"">
+              <label for="firstname">First name</label>
+              <input type="text" name="firstname" id="firstname" class="outline-none border-b-2 border-slate-400 py-2"/>
+            </div>
+            <div class="flex flex-col py-4"">
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" class="outline-none border-b-2 border-slate-400 py-2"/>
+            </div>
+            <div class="flex flex-col py-4"">
+              <label for="">Message</label>
+              <textarea name="" id="" cols="30" rows="5" class="outline-none border-b-2 border-slate-400"></textarea>
+            </div>
+            <div class="flex flex-col py-3">
+              <button class="bg-indigo-500 px-12 py-4 text-white">
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="md:w-[55%] md:grid md:grid-cols-2 md:grid-rows-5 gap-2 py-4 ">
+            <div class="md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-3 my-2 md:my-0"><img src="./img/grid-1.jpg" alt="" class="w-full  rounded-lg"></div>
+            <div class="md:col-start-2 md:col-end-3 md:row-start-1 md:row-end-5 my-2 md:my-0"><img src="./img/grid-4.jpg" alt="" class="w-full rounded-lg"></div>
+            <div class="md:col-start-1 md:col-end-2 md:row-start-3 md:row-end-5 my-2 md:my-0"><img src="./img/grid-3.jpg" alt="" class="w-full rounded-lg"></div>
+
+        </div>
+      </div>
+    </section>
+    <footer class="w-full flex items-center justify-center py-8 bg-indigo-100">
+       <div class="w-full max-w-5xl mx-auto flex flex-col  gap-3 md:flex-row md:items-center md:justify-between px-4">
+            <div><h1 class="py-2  text-2xl font-bold text-indigo-600"><a href="">Softfy Inc.</a>
+            
+          </h1></div>
+          <div class="text-xs">
+              &copy; <span class="showDate"></span> - <span class="text-indigo-600 font-semibold">Softfy Inc. </span>. Fanatic All Right Reserved
+          </div>
+          <div class="text-xs"> <a href="#top">Back to top</a></div>
+       </div>
+    </footer>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script>
+        let day = new Date().getFullYear();
+        document.querySelector(".showDate").textContent = day;
+
       function toggleMenu(e) {
-        let mobileMenu = document.querySelector(".mobile-menu");
-        e.name === "menu" ? (e.name = "close") : (e.name = "menu");
+        let mobileMenu = document.querySelector(".mobile-menu");        
         mobileMenu.classList.toggle("hidden");
+      }
+
+
+      function toggleMobileMenu(e){
+           let mobileMenu = document.querySelector(".mobile-menu");
+        mobileMenu.classList.toggle("hidden");
+       
       }
     </script>
   </body>
