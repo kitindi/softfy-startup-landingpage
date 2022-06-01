@@ -6,7 +6,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <header class="w-full shadow fixed left-0 top-0 z-100 bg-white">
+    <header class="w-full shadow fixed left-0 top-0 md:z-100 bg-white">
       <nav class="w-full max-w-6xl mx-auto flex items-center justify-between">
         <!-- logo here -->
         <div class="flex justify-between items-center w-full py-1">
@@ -71,12 +71,15 @@
         >
       </div>
     </header>
-    <section class="w-full min-h-screen md:my-20 my-12" id="hero">
+    <section
+      class="w-full flex justify-center items-center min-h-screen md:my-2 my-12"
+      id="hero"
+    >
       <div
         class="w-full max-w-6xl h-full mx-auto flex flex-col md:flex-row-reverse md:justify-between md:items-center md:gap-2 px-3"
       >
-        <div class="h-full md:relative">
-          <img src="./img/hero.png" alt="" class="w-full rounded-xl" />
+        <div class="h-full md:relative md:z-[-1]">
+          <img src="./img/hero.png" alt="" class="w-full rounded-xl md:z-1" />
           <div
             class="hidden md:block md:absolute md:bottom-14 md:left-[-150px] md:w-[400px] md:z-1 md:py-4 md:px-6 md:rounded-lg md:bg-indigo-800"
           >
@@ -96,12 +99,12 @@
           <h2
             class="text-4xl my-5 md:text-6xl md:mb-6 py-4 font-bold text-left text-slate-700"
           >
-            We are Edu Tech <br />Agency
+            We are Edu Tech <br />Agency.
           </h2>
 
           <p class="text-lg text-slate-600 mb-3">
-            We help you focus on academics and leave us the daily management
-            cores.<br />
+            We help schools focus on academics and leave to us the daily
+            management cores.<br />
             Join us with other 100+ schools to improve your work flow
           </p>
           <button
@@ -112,11 +115,100 @@
         </div>
       </div>
     </section>
-    <section class="w-full py-8 bg-gray-200">
-      <div class="w-full max-w-6xl mx-auto">
-        <h2 class="text-center uppercase font-semibold text-slate-600">
-          Companies chose to work with us
+    <section class="w-full bg-gray-300">
+      <div class="w-full max-w-6xl mx-auto px-4 py-8 md:py-20">
+        <!-- <h2 class="text-center uppercase font-semibold text-slate-600 mb-6">
+          Schools chose to work with us
+        </h2> -->
+        <div class="flex flex-wrap justify-between items-center gap-5">
+          <a href=""
+            ><img src="./img/logo01.f0f3765f.svg" alt="" class="w-32"
+          /></a>
+          <a href=""
+            ><img src="./img/logo02.ef3dc476.svg" alt="" class="w-24"
+          /></a>
+          <a href=""
+            ><img src="./img/logo03.ed39a486.svg" alt="" class="w-16"
+          /></a>
+          <a href=""
+            ><img src="./img/logo04.d4601325.svg" alt="" class="w-16"
+          /></a>
+          <a href=""
+            ><img src="./img/logo05.e583f97d.svg" alt="" class="w-16"
+          /></a>
+          <a href=""
+            ><img src="./img/logo06.7fcfefca.svg" alt="" class="w-16"
+          /></a>
+        </div>
+      </div>
+    </section>
+    <section id="services" class="w-full flex justify-center items-center">
+      <div class="w-full max-w-6xl mx-auto px-4 py-8 md:py-28">
+        <h2 class="text-4xl font-bold py-4 text-slate-700">
+          Our Awesome Services
         </h2>
+        <p class="py-2 text-lg text-slate-500">
+          Our serviecs focus on educational institutaions which covers local
+          schools, international schools and universities.
+        </p>
+        <div
+          class="w-full flex md:flex-row flex-col items-center justify-between gap-2 mt-10"
+        >
+          <div
+            class="md:w-96 border-2 shadow-sm rounded-lg border-slate-100 p-4 flex items-center space-x-3"
+          >
+            <div>
+              <ion-icon
+                name="cube"
+                class="w-11 h-11 text-indigo-600"
+              ></ion-icon>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-3">Computer lab design</h3>
+              <p class="text-slate-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus dolores perferendis fugiat recusandae id
+                accusantium ad, quisquam dolorum velit ex!
+              </p>
+            </div>
+          </div>
+          <div
+            class="md:w-96 border-2 shadow-sm rounded-lg border-slate-100 p-4 flex items-center space-x-3"
+          >
+            <div>
+              <ion-icon
+                name="cube"
+                class="w-11 h-11 text-indigo-600"
+              ></ion-icon>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-3">Computer lab design</h3>
+              <p class="text-slate-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus dolores perferendis fugiat recusandae id
+                accusantium ad, quisquam dolorum velit ex!
+              </p>
+            </div>
+          </div>
+          <div
+            class="md:w-96 border-2 shadow-sm rounded-lg border-slate-100 p-4 flex items-center space-x-3"
+          >
+            <div>
+              <ion-icon
+                name="wifi"
+                class="h-11 w-11 text-indigo-600"
+              ></ion-icon>
+            </div>
+            <div>
+              <h3 class="text-lg font-semibold mb-3">Cloud infrastructure</h3>
+              <p class="text-slate-600">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Voluptatibus dolores perferendis fugiat recusandae id
+                accusantium ad, quisquam dolorum velit ex!
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
